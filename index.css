@@ -1,0 +1,173 @@
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  object-fit: cover;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.fullscreen-bg::before {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	content: '';
+
+	/* Any overlay color that you want, here I use black with 25% opacity */
+	background-color: rgba(0.0, 0.0, 0.0, 0.5);
+}
+
+
+
+body {
+  margin: 0;
+  font-family: mirai-medium;
+  font-size: 18px;
+}
+
+p{
+	line-height: 2.0;
+}
+
+main {
+	color: white;
+  position: relative;
+  padding: 50px 50px 0px 50px;
+}
+
+
+header
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+tagline
+{
+  font-family: mirai-bold;
+  font-size: 26px;
+  line-height: 1.5;
+}
+
+socials
+{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 15px;
+}
+
+.main-description
+{
+	font-size: 18px;
+	max-width: 500px;
+}
+
+a
+{
+	font-family: mirai-bold; 
+	text-decoration: underline; 
+	text-decoration-thickness: 2px; 
+	text-underline-offset: 2px;
+	color: #fff;
+}
+
+title
+{
+	display: block;
+	text-align: center;
+	font-family: mirai-bold;
+	font-size: 30px;
+	padding-top: 70px;
+	padding-bottom: 30px;
+	/*
+	background-image: url('images/bg-image.png');
+	background-clip: text;
+	color:transparent;
+	*/
+
+}
+
+dates
+{
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	column-gap: 35px;
+	flex-wrap: wrap;
+
+}
+
+date
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	
+	
+	row-gap: 12px;
+	font-size: 18px;
+	padding-bottom: 32px;
+	width: 240px;
+}
+
+paragraph
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.paragraph
+{
+	display: block;
+	max-width: 480px;
+	text-align: center;
+	margin: 0px;
+}
+
+footer
+{
+	display: flex;
+	justify-content: center;
+}
+
+.mask
+{
+	display: block;
+	position:absolute;
+	inset: 0;
+	mix-blend-mode: multiply;
+}
+
+/*
+fonts
+*/
+
+@font-face{
+	font-family: mirai-regular;
+	src: url('fonts/mirai-regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: mirai-medium;
+	src: url('fonts/mirai-medium.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: mirai-bold;
+	src: url('fonts/mirai-bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
