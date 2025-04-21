@@ -98,18 +98,12 @@ title
 	font-size: 30px;
 	padding-top: 70px;
 	padding-bottom: 30px;
-	/*
-	background-image: url('images/bg-image.png');
-	background-clip: text;
-	color:transparent;
-	*/
-
 }
 
 dates
 {
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 	display: flex;
 	column-gap: 35px;
 	flex-wrap: wrap;
@@ -165,9 +159,11 @@ footer
 	/* background-color: #000; */
 }
 
-.mask-layer
+.sponsors
 {
-	/* isolation: isolate; */
+	isolation: isolate; 
+	width: 100%; 
+	max-width: 500px;
 }
 
 /*
