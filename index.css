@@ -139,6 +139,15 @@ paragraph
 	margin: 0px;
 }
 
+credits
+{
+	display: block;
+	max-width: 480px;
+	text-align: center;
+	font-size: 16px;
+	margin: 0px;
+}
+
 footer
 {
 	display: flex;
